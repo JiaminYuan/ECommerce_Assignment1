@@ -15,5 +15,30 @@
 		<li><a href='/Contact/index'>Contact Us</a></li>
 		<li><a href='/Contact/read'>See the messages we get</a></li>
 	</ul>
+
+	<table>
+			<tr><th>Email:</th><th>Message:</th><th>Action</th></tr>
+			<?php 
+				//$data
+				$c = count($data);
+				$i = 0;
+
+				foreach ($data as $item){
+					echo "<tr>
+						<td>$item->email</td>
+						<td>$item->message</td>
+						<td><a href='/Info/delete/$item->email'>delete</a></td>
+					</tr>";
+				}
+			?>
+		</table>
+
+		<form action='' method='post'>
+			Email:
+			<input type="text" name="new_email"/>
+			Message:
+			<input type="text" name="new_message"/>
+			<input type="submit" name="action" value="Send!"/>
+		</form>
 </body>
 </html>

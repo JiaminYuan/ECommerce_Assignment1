@@ -15,5 +15,6 @@
 		<li><a href='/Contact/index'>Contact Us</a></li>
 		<li><a href='/Contact/read'>See the messages we get</a></li>
 	</ul>
+
 </body>
 </html>
