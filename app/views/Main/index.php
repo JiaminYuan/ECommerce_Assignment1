@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	<header>Landing Page</header>
 	<p>Welcome to this new application</p>
 	<ul>
 		<li><a href='/Main/index'>Landing Page</a></li>
