@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	<header><h1>Contact Us</h1></header>
 	<p>Wanna reach us? Write your email information and messages in the following form and then submit it.</p>
 	<ul>
 		<li><a href='/Main/index'>Landing Page</a></li>

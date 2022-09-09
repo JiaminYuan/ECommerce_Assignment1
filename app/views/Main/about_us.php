@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	<header><h1>About Us</h1></header>
 	<p>See our incredible team of devs</p>
 	<ul>
 		<li><a href='/Main/index'>Landing Page</a></li>

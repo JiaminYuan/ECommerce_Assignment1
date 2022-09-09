@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<p></p>
+	<header><h1>Contact Us - messages sent</h1></header>
 	<ul>
 		<li><a href='/Main/index'>Landing Page</a></li>
 		<li><a href='/Main/about_us'>About Us</a></li>

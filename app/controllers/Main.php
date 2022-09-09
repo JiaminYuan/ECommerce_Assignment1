@@ -10,4 +10,12 @@ class Main extends \app\core\Controller{
 		$this->view('Main/about_us');
 	}
 
+	public function contact(){
+		$this->view('Contact/index');
+	}
+
+	public function message(){
+		$this->view('Contact/read');
+	}
+
 }
