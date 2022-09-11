@@ -8,12 +8,20 @@
 </head>
 
 <body>
-	<header><h1>Contact Us - messages sent</h1></header>
-	<ul>
-		<li><a href='/Main/index'>Landing Page</a></li>
-		<li><a href='/Main/about_us'>About Us</a></li>
-		<li><a href='/Contact/index'>Contact Us</a></li>
-		<li><a href='/Contact/read'>See the messages we get</a></li>
-	</ul>
+	<div class="container">
+		<div class="row row-cols-auto">
+	    	<div class="col">
+		    	<ul>
+					<li><a href='/Main/index'>Landing Page</a></li>
+					<li><a href='/Main/about_us'>About Us</a></li>
+					<li><a href='/Contact/index'>Contact Us</a></li>
+					<li><a href='/Contact/read'>See the messages we get</a></li>
+				</ul>
+	    	</div>
+	    	<div class="col">
+	      		<header><h1>Contact Us - messages sent</h1></header>
+	    	</div>
+		</div>
+	</div>
 </body>
 </html>
