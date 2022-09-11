@@ -21,7 +21,7 @@
 		    <div class="col">
 		     	<header><h1>Contact Us</h1></header>
 				<p>Wanna reach us? Write your email information and messages in the following form and then submit it.</p>
-				<form>
+				<form action='' method='post'>
 					<div class="form-group row">
 				   		<div class="form-group row">
 			    			<label for="inputEmail" class="col-sm-2 col-form-label">Email: </label>

@@ -20,6 +20,21 @@
 	    	</div>
 	    	<div class="col">
 	      		<header><h1>Contact Us - messages sent</h1></header>
+	      		<p><!--display the data as a table-->
+				<table>
+					<?php 
+						//$data
+						$c = count($data);
+						$i = 0;
+						foreach ($data as $item){
+							echo "<tr>
+								<td>$item->email</td>
+								<td>$item->message</td>
+							</tr>";
+						}
+					?>
+				</table>
+			</p>
 	    	</div>
 		</div>
 	</div>
