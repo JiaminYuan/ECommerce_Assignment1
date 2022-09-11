@@ -4,6 +4,7 @@ namespace app\controllers;
 class Main extends \app\core\Controller{
 	private static $file = 'app/resources/counter.txt';
 	public $counter;
+	public $num;
 
 	public function index(){
 		$this->view ('Main/index');
@@ -20,19 +21,26 @@ class Main extends \app\core\Controller{
 			flock($fr, LOCK_EX);
 			$counter = [];
 			$i = 0;
-			foreach ($messages as $message) {
+			foreach ($fr as $message) {
 				$item = new Main();
-				$item->name = $message;
-				$item->id = $i;
+				$item->num = $i + 1;
 				$counter[] = $item;
 				$i++;
 			}
 			flock($fr, LOCK_UN);
 			fclose($fr);
+			echo $counter;
 			return $counter;
-		}else{
-			//$counter{"count":0};
 		}
+		// else{
+		// 	$counter{"count":0};
+		// }
+	}
+
+	public function counterJSON(){
+		// $dCounter = json_decode($counter);
+		// echo(json_decode($counter));
+		echo $counter;
 	}
 
 }

@@ -21,8 +21,8 @@ class Info{
 		header('location:/Contact/read');
 	}
 
-	public function getAll(){//return all the Food items from the file
-		$foods = file(self::$file);
+	public function getAll(){
+		$logs = file(self::$file);
 		$output = [];//or array() to build an empty array
 		$i = 0;
 		foreach ($infos as $info) {
