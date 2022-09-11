@@ -2,7 +2,7 @@
 namespace app\controllers;
 
 class Contact extends \app\core\Controller{
-	public function contact(){
+	public function index(){
 			//process the form data if it is submitted
 			if(isset($_POST['action'])){
 				//create a info object

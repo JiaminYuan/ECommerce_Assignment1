@@ -35,4 +35,5 @@ class Info{
 		}
 		return $output;
 	}
+
 }

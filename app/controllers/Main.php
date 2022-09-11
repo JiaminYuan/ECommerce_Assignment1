@@ -9,7 +9,7 @@ class Main extends \app\core\Controller{
 		$this->view ('Main/index');
 	}
 
-	public function aboutUs(){
+	public function about_Us(){
 		$this->view('Main/about_us');
 	}
 

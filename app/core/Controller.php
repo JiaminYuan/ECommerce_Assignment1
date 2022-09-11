@@ -6,5 +6,4 @@ class Controller{
 	public function view($name, $data = []){
 		include('app/views/' . $name . '.php');
 	}
-
 }

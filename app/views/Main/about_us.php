@@ -22,11 +22,11 @@
 		      	<header><h1>About Us</h1></header>
 				<p>See our incredible team of devs</p>
 				<figure class="figure">
-				  <img src="././images/jiamin.jpeg" class="figure-img img-fluid rounded" alt="image1">
+				  <img src="../images/jiamin.jpeg" class="figure-img img-fluid rounded" alt="image1">
 				  <figcaption class="figure-caption">Jiamin loves cat.</figcaption>
 				</figure>
 				<figure class="figure">
-				  <img src="././images/dinal.jpeg" class="figure-img img-fluid rounded" alt="image2">
+				  <img src="../images/dinal.jpeg" class="figure-img img-fluid rounded" alt="image2">
 				  <figcaption class="figure-caption">Dinal likes watching bears fish.</figcaption>
 				</figure>
     		</div>
