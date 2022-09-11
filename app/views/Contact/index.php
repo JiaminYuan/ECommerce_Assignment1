@@ -8,38 +8,38 @@
 </head>
 
 <body>
-	<header><h1>Contact Us</h1></header>
-	<p>Wanna reach us? Write your email information and messages in the following form and then submit it.</p>
-	<ul>
-		<li><a href='/Main/index'>Landing Page</a></li>
-		<li><a href='/Main/about_us'>About Us</a></li>
-		<li><a href='/Contact/index'>Contact Us</a></li>
-		<li><a href='/Contact/read'>See the messages we get</a></li>
-	</ul>
+	<div class="container">
+		<div class="row row-cols-auto">
+		    <div class="col">
+		    	<ul>
+					<li><a href='/Main/index'>Landing Page</a></li>
+					<li><a href='/Main/about_us'>About Us</a></li>
+					<li><a href='/Contact/index'>Contact Us</a></li>
+					<li><a href='/Contact/read'>See the messages we get</a></li>
+				</ul>
+		    </div>
+		    <div class="col">
+		     	<header><h1>Contact Us</h1></header>
+				<p>Wanna reach us? Write your email information and messages in the following form and then submit it.</p>
+				<form>
+					<div class="form-group row">
+				   		<div class="form-group row">
+			    			<label for="inputEmail" class="col-sm-2 col-form-label">Email: </label>
+			    			<div class="col-sm-10">
+			      				<input type="email" class="form-control" id="inputEmail">
+			    			</div>
+			  			</div>
+			  			<div class="form-group row">
+			    			<label for="inputMessage" class="col-sm-2 col-form-label">Message: </label>
+			    			<div class="col-sm-10">
+			      				<textarea class="form-control" id="inputMessage" rows="2"></textarea>
+			    			</div>
+			  			</div>
+				   		<button type="submit" class="btn btn-default btn-block">Send!</button>
+				</form>
+		    </div>
+		</div>
+	</div>
 
-	<table>
-			<tr><th>Email:</th><th>Message:</th><th>Action</th></tr>
-			<?php 
-				//$data
-				$c = count($data);
-				$i = 0;
-
-				foreach ($data as $item){
-					echo "<tr>
-						<td>$item->email</td>
-						<td>$item->message</td>
-						<td><a href='/Info/delete/$item->email'>delete</a></td>
-					</tr>";
-				}
-			?>
-		</table>
-
-		<form action='' method='post'>
-			Email:
-			<input type="text" name="new_email"/>
-			Message:
-			<input type="text" name="new_message"/>
-			<input type="submit" name="action" value="Send!"/>
-		</form>
 </body>
 </html>

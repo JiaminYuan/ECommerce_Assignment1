@@ -8,14 +8,49 @@
 </head>
 
 <body>
-	<header><h1>Landing Page</h1></header>
-	<p>Welcome to this new application</p>
-	<ul>
-		<li><a href='/Main/index'>Landing Page</a></li>
-		<li><a href='/Main/about_us'>About Us</a></li>
-		<li><a href='/Contact/index'>Contact Us</a></li>
-		<li><a href='/Contact/read'>See the messages we get</a></li>
-	</ul>
+
+	<div class="container">
+	  <div class="row row-cols-auto">
+	    <div class="col">
+	    	<ul>
+				<li><a href='/Main/index'>Landing Page</a></li>
+				<li><a href='/Main/about_us'>About Us</a></li>
+				<li><a href='/Contact/index'>Contact Us</a></li>
+				<li><a href='/Contact/read'>See the messages we get</a></li>
+			</ul>
+	    </div>
+	    <div class="col">
+	      <header><h1>Contact Us - messages sent</h1></header>
+	    </div>
+	    
+  </div>
+</div>
+
+	
+
+
+<!--
+<div class="container">
+  <div class="row">
+	    <div class="col">
+	    	<ul>
+				<li><a href='/Main/index'>Landing Page</a></li>
+				<li><a href='/Main/about_us'>About Us</a></li>
+				<li><a href='/Contact/index'>Contact Us</a></li>
+				<li><a href='/Contact/read'>See the messages we get</a></li>
+			</ul>
+	    </div>
+	    <div class="col">
+	      	<header><h1>Landing Page</h1></header>
+			<p>Welcome to this new application</p>
+			<p> We will build an online store using storefront model to sell daily necessities products at a set price. The benefit is to sell and promote the brand's own products while maintaining the brand's uniqueness. Our target client are buyers who are looking for special products and home delivery services.</p>
+	    </div>
+	    <div class="col-6">
+	    </div>
+	</div>
+</div>
+-->
+	
 
 </body>
 </html>
