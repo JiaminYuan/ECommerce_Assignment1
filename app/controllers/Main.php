@@ -4,7 +4,7 @@ namespace app\controllers;
 class Main extends \app\core\Controller{
 	private static $file = 'app/resources/counter.txt';
 	public $counter;
-	public $num;
+	// public $num;
 
 	public function index(){
 		$this->view ('Main/index');
@@ -16,31 +16,27 @@ class Main extends \app\core\Controller{
 
 
 	public function counter(){
-		if (file_exists($file)){
+		if (file_exists('app/resources/counter.txt')){
 			$fr = fopen(self::$file, 'r');
 			flock($fr, LOCK_EX);
-			$counter = [];
-			$i = 0;
-			foreach ($fr as $message) {
-				$item = new Main();
-				$item->num = $i + 1;
-				$counter[] = $item;
-				$i++;
-			}
+			$counter = fread($fr, 1024);
 			flock($fr, LOCK_UN);
 			fclose($fr);
-			echo $counter;
-			return $counter;
+			// echo $counter;
+			// return $counter;
 		}
-		// else{
-		// 	$counter{"count":0};
-		// }
-	}
-
-	public function counterJSON(){
-		// $dCounter = json_decode($counter);
-		// echo(json_decode($counter));
+		else{
+			$counter = '{"count":0}';
+		}
+		$dCounter = json_decode($counter);
+		// echo ($dCounter);
+		$dCounter->count++;
+		$counter = json_encode($dCounter);
 		echo $counter;
+		$fh = fopen(self::$file, 'w+');
+			fwrite($fh, $counter);
+			flock($fh, LOCK_UN);
+			fclose($fh);
 	}
 
 }
