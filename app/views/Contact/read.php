@@ -22,12 +22,14 @@
 	      		<header><h1>Contact Us - messages sent</h1></header>
 	      		<p><!--display the data as a table-->
 				<table>
+					<tr><th>ID</th><th>Email</th><th>Message</th></tr>
 					<?php 
 						//$data
 						$c = count($data);
 						$i = 0;
 						foreach ($data as $item){
 							echo "<tr>
+								<td>$item->id</td>
 								<td>$item->email</td>
 								<td>$item->message</td>
 							</tr>";

@@ -22,14 +22,14 @@ class Info{
 	}
 
 	public function getAll(){
-		$logs = file(self::$file);
+		$infos = file(self::$file);
 		$output = [];//or array() to build an empty array
 		$i = 0;
 		foreach ($infos as $info) {
 			$item = new Info();
 			$item->email = $info;
 			$item->message = $info;
-			$id = $i;
+			$item->id = $i;
 			$output[] = $item;
 			$i++;
 		}

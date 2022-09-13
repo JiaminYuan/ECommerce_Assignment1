@@ -35,7 +35,7 @@
 			      				<textarea class="form-control" id="inputMessage" rows="2"></textarea>
 			    			</div>
 			  			</div>
-				   		<button type="submit" class="btn btn-default btn-block">Send!</button>
+				   		<button type="submit" name="action" class="btn btn-default btn-block">Send!</button>
 				</form>
 		    </div>
 		</div>
