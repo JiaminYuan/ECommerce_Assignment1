@@ -33,6 +33,7 @@
     		<div class="col-6">
     		</div>
   		</div>
+  		<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
   	</div>
 </body>
 </html>
