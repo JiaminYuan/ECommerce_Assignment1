@@ -23,11 +23,14 @@
 	      	<header><h1>Landing Page</h1></header>
 					<p>Welcome to this new application</p>
 					<p> We will build an online store using storefront model to sell daily necessities products at a set price. The benefit is to sell and promote the brand's own products while maintaining the brand's uniqueness. Our target client are buyers who are looking for special products and home delivery services.</p>
+					<div class="position-absolute bottom-70 end-50">
+						<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
+					</div>				    		
 	    </div>
 	    <div class="col-6">
 	    </div>
+
 	</div>
-	<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
 </div>
 	
 

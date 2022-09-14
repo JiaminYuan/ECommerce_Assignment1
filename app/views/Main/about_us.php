@@ -29,11 +29,13 @@
 				  <img src="../images/dinal.jpeg" class="figure-img img-fluid rounded" alt="image2">
 				  <figcaption class="figure-caption">Dinal likes watching bears fish.</figcaption>
 				</figure>
+				<div class="position-absolute bottom-70 end-50">
+  					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
+				</div>	
     		</div>
     		<div class="col-6">
     		</div>
   		</div>
-  		<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
   	</div>
 </body>
 </html>

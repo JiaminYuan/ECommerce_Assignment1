@@ -26,20 +26,24 @@
 				   		<div class="form-group row">
 			    			<label for="inputEmail" class="col-sm-2 col-form-label">Email: </label>
 			    			<div class="col-sm-10">
-			      				<input type="email" class="form-control" id="inputEmail">
+			      				<input type="email" class="form-control" id="inputEmail" name="inputEmail">
 			    			</div>
 			  			</div>
 			  			<div class="form-group row">
 			    			<label for="inputMessage" class="col-sm-2 col-form-label">Message: </label>
 			    			<div class="col-sm-10">
-			      				<textarea class="form-control" id="inputMessage" rows="2"></textarea>
+			      				<textarea class="form-control" id="inputMessage" name="inputMessage" rows="2"></textarea>
 			    			</div>
 			  			</div>
 				   		<button type="submit" name="action" class="btn btn-default btn-block">Send!</button>
+				</div>	
+						   		
 				</form>
+				<div class="position-absolute bottom-70 end-70">
+					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
+				</div>		
 		    </div>
 		</div>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
 	</div>
 
 </body>

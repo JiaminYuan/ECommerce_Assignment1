@@ -36,10 +36,12 @@
 						}
 					?>
 				</table>
-			</p>
+				</p>
+				<div class="position-absolute bottom-50 end-50">
+  					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
+				</div>	
 	    	</div>
 		</div>
-		<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
 	</div>
 </body>
 </html>
