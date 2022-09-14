@@ -39,11 +39,11 @@
 				</div>	
 						   		
 				</form>
-				<div class="position-absolute bottom-70 end-70">
-					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
-				</div>		
 		    </div>
 		</div>
+		<div class="position-absolute bottom-70 end-50">
+					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
+				</div>
 	</div>
 
 </body>
