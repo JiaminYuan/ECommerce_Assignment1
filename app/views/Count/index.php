@@ -1,4 +1,7 @@
 <?php
-namespace app\views;
+namespace app\controllers;
 
-	echo "<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>";
+	  $class = new Main();
+	  $counterFunc = $class->counter();
+
+	echo $counterFunc." page visits";

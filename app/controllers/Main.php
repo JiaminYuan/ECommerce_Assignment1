@@ -22,21 +22,19 @@ class Main extends \app\core\Controller{
 			$counter = fread($fr, 1024);
 			flock($fr, LOCK_UN);
 			fclose($fr);
-			// echo $counter;
-			// return $counter;
 		}
 		else{
 			$counter = '{"count":0}';
 		}
 		$dCounter = json_decode($counter);
-		// echo ($dCounter);
 		$dCounter->count++;
 		$counter = json_encode($dCounter);
 		echo $counter;
 		$fh = fopen(self::$file, 'w+');
-			fwrite($fh, $counter);
-			flock($fh, LOCK_UN);
-			fclose($fh);
+		fwrite($fh, $counter);
+		flock($fh, LOCK_UN);
+		fclose($fh);
+		// return $counter;
 	}
 
 }
