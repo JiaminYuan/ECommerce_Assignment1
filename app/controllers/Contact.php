@@ -20,7 +20,9 @@ class Contact extends \app\core\Controller{
 	public function read(){
 		$this->view('Contact/read');
 		//read the log.txt file into a variable
-		//$readInfo = new \app\controllers\Info();
-		//$readInfos = $readInfo->getAll();
+		$readInfo = new \app\controllers\Info();
+		$readInfos = $readInfo->getAll();
+		var_dump($readInfo);
+		// echo json_encode($readInfo);
 	}
 }
