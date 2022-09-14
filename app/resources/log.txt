@@ -1,6 +1,0 @@
-Email:ymimi1121@gmail.com
-Message:hi
-Email:abc12323@gmail.com
-Message:hello
-Email:abc123@gmail.com
-Message:test

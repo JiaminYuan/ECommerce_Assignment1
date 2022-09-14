@@ -4,7 +4,6 @@ namespace app\controllers;
 class Main extends \app\core\Controller{
 	private static $file = 'app/resources/counter.txt';
 	public $counter;
-	// public $num;
 
 	public function index(){
 		$this->view ('Main/index');

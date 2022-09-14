@@ -21,20 +21,15 @@
 	    	</div>
 	    	<div class="col">
 	      		<header><h1>Contact Us - messages sent</h1></header>
-	      		<p>
 						<?php 
 							//$data
 							$c = count($data);
 							$i = 0;
 
 							foreach ($data as $item){
-								echo "<b>$item->email</b> 									
-									</br>
-									$item->message
-									</br>";
+								echo "<b>$item->email</b></br>";
 							}
 						?>
-				</p>
 				<div class="position-absolute bottom-70 end-50">
   					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
 				</div>	
