@@ -1,8 +1,6 @@
-Email:d@something.com
-Message:test
-Email:d@something.com
-Message:test
-Email:d@something.com
+Email:ymimi1121@gmail.com
+Message:hi
+Email:abc12323@gmail.com
 Message:hello
-Email:d@something.com
-Message:idk
+Email:abc123@gmail.com
+Message:test

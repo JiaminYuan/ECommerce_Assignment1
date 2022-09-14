@@ -29,7 +29,6 @@ class Main extends \app\core\Controller{
 		$dCounter = json_decode($counter);
 		$dCounter->count++;
 		$counter = json_encode($dCounter);
-		// echo $counter;
 		$fh = fopen(self::$file, 'w+');
 		fwrite($fh, $counter);
 		flock($fh, LOCK_UN);

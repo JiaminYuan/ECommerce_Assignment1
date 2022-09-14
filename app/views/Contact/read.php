@@ -6,24 +6,6 @@
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-	<script type="text/javascript">
-		$(document).ready(
-		function(){
-			//getJSON script will go here
-			$.getJSON('/Contact/read',
-				function(data){
-					output = "";
-
-					for (const item of data){
-						output = output  + " Email " + item.email + "Message" + item.message + "<br>";
-					}
-
-					$('#messages').html(output);
-				}
-			);
-		}
-	);
-	</script>
 </head>
 
 <body>
@@ -39,27 +21,21 @@
 	    	</div>
 	    	<div class="col">
 	      		<header><h1>Contact Us - messages sent</h1></header>
-	      		<div id="messages">
-	      			
-	      		</div>
-	      		<p><!--display the data as a table-->
-				<!-- <table>
-					<tr><th>ID</th><th>Email</th><th>Message</th></tr>
-					<?php 
-						//$data
-						$c = count($data);
-						$i = 0;
-						foreach ($data as $item){
-							echo "<tr>
-								<td>$item->id</td>
-								<td>$item->email</td>
-								<td>$item->message</td>
-							</tr>";
-						}
-					?>
-				</table> -->
+	      		<p>
+						<?php 
+							//$data
+							$c = count($data);
+							$i = 0;
+
+							foreach ($data as $item){
+								echo "<b>$item->email</b> 									
+									</br>
+									$item->message
+									</br>";
+							}
+						?>
 				</p>
-				<div class="position-absolute bottom-50 end-50">
+				<div class="position-absolute bottom-70 end-50">
   					<?php include $_SERVER['DOCUMENT_ROOT']."/app/views/Count/index.php";?>
 				</div>	
 	    	</div>
